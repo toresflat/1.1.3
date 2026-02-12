@@ -1,3 +1,5 @@
-html {
-    color: red;
+.block {
+    width: 320px;
+    height: 1024px;
+    background-color: grey;
 }

@@ -20,7 +20,7 @@ html {
     box-sizing: inherit;
 }
 
-body {
+.body {
     width: 100vw;
     font-family: TTLakes;
     font-size: 14px;
@@ -28,8 +28,14 @@ body {
     padding: 0;
 }
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
 main {
     background-color: #F8F8F8;
+    height: 100vh;
+    box-shadow: inset -15px 0px 10px -10px grey;
 }
 
 /*button-style*/
@@ -97,6 +103,15 @@ main {
     display: none;
 }
 
+.screenClick-close {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 320px;
+    top: 0;
+    opacity: 0;
+}
+
 .aside-menu {
     font-family: TTLakes;
     width: 320px;
@@ -106,7 +121,7 @@ main {
     background-color: white;
     box-shadow: 0 0 20px 0px grey;
     position: fixed;
-    top: 7px;
+    top: 0;
     left: -5px;
 }
 
@@ -321,7 +336,7 @@ main {
     gap: 10px;
     margin-top: 10px;
     padding-bottom: 20px;
-}   
+}  
 
 .content-block__elem1 {
     margin-left: 5%;
